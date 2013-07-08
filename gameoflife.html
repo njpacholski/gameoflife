@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Game of Life</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!--
+Game of Life 
+The Rules
+
+For a space that is 'populated':
+Each cell with one or no neighbors dies, as if by loneliness.
+Each cell with four or more neighbors dies, as if by overpopulation.
+Each cell with two or three neighbors survives.
+
+For a space that is 'empty' or 'unpopulated'
+Each cell with three neighbors becomes populated.
+-->
+
+<body>
+<div id="glasspane">
+     <p id="title">Conway's Game of Life</p><br />
+     <b>The Rules</b><br/>
+     <b>For a space that is 'populated':</b>
+     <p>Each cell with one or no neighbours dies, as if by loneliness.</p>
+     <p>Each cell with four or more neighbours dies, as if by overpopulation.</p>
+     <p>Each cell with two or three neighbours survives.</p><br />
+
+     <b>For a space that is 'empty' or 'unpopulated':</b>
+     <p>Each cell with three neighbours becomes populated.</p><br/><br/>
+     
+     <span id="start">Play</span><br/><br/>
+     <span id="random">Random</span><br/><br/>
+     <span id="reset">Reset</span><br/><br/>
+</div>
+<canvas id="cvs" width="0" height="0">
+Your browser does not support HTML5. 
+</canvas>
+<script src="life.js"></script>
+</body>
+</html>
